@@ -4,7 +4,10 @@ node {
 	}
 	stage ('Build') {
     		dir("punith-assignment-bdd-java") {
-  			sh "{mvnHome}/bin/mvn clean install -P dev"
+  			
+			withMaven(maven : 'apache-maven-3.6.1') {
+                		bat'mvn clean install -P dev'
+            		}
        		}
 	}
 }

@@ -4,7 +4,7 @@ node {
 	}
 	stage ('Build') {
     		dir("punith-assignment-bdd-java") {
-                	bat'mvn clean install -P dev'
+                	bat'mvn clean install -P api'
        		}
 	}
 }

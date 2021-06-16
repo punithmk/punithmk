@@ -4,10 +4,7 @@ node {
 	}
 	stage ('Build') {
     		dir("punith-assignment-bdd-java") {
-			def mvn_version = 'M3'
-			withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
-  			    	sh "mvn clean install -P dev"
-			}
+  			sh "'${mvnHome}/bin/mvn'  clean install -P dev"
        		}
 	}
 }

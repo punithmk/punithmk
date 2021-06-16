@@ -18,7 +18,10 @@ Negative Scenarios can be better handled
 To run the test
 ------------------------
 
-mvn clean install -P dev  
+mvn clean install -P dev  -- for webbrowser  and apitesting
+mvn clean install -P mobile  -- for mobile testing
+
+
 
 *Note -P dev is default profile hence doesn't need to be specified for every run 
 

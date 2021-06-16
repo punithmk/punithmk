@@ -4,7 +4,7 @@ node {
 	}
 	stage ('Build') {
     		dir("punith-assignment-bdd-java") {
-  			sh "mvn clean install -P dev"
+  			sh "{mvnHome}/bin/mvn clean install -P dev"
        		}
 	}
 }

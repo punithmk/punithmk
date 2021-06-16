@@ -1,6 +1,6 @@
 node {
 	stage ('SCM checkout'){
-		git "https://github.com/punithmk/punithmk/tree/main"
+		git "https://github.com/punithmk/punithmk/"
 		}
 	stage ('Build'){
     	dir("comtest") {

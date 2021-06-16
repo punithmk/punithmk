@@ -34,10 +34,10 @@
 
         <!-- Jenkins environment @ deploy server normally configured on linux -->
         <profile>
-            <id>jenkins</id>
+            <id>api</id>
             <properties>
                 <profile.path>/profiles/jenkins/config.properties</profile.path>
-                <testToRun>**/*JenkinsSuite.class</testToRun>
+                <testToRun>**/*APItestSuite.java</testToRun>
             </properties>
         </profile>
 
@@ -46,7 +46,7 @@
             <id>mobile</id>
             <properties>
                 <profile.path>/profiles/mobile/config.properties</profile.path>
-                <testToRun>**/*RunMobileAppSuite.class</testToRun>
+                <testToRun>**/*MobileAppSuite.class</testToRun>
             </properties>
         </profile>
     </profiles>
